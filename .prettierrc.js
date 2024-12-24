@@ -1,8 +1,18 @@
-module.exports = {
+export default {
   semi: true,
-  trailingComma: 'all',
-  singleQuote: true,
+  trailingComma: "all",
+  singleQuote: false,
   printWidth: 100,
   tabWidth: 2,
-  endOfLine: 'auto',
+  endOfLine: "auto",
+  plugins: ["prettier-plugin-astro"],
+  overrides: [
+    {
+      files: ["*.astro"],
+      options: {
+        parser: "astro",
+        astroAllowShorthand: true,
+      },
+    },
+  ],
 };

@@ -54,6 +54,7 @@ Or let the pre-commit hook run them automatically on `git commit`. If any check 
 ├── tailwind.config.js
 ├── tsconfig.json
 ├── package.json
+├── .gitignore
 └── README.md
 ```
 
