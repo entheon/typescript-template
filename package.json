@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,astro}": [
@@ -43,5 +43,6 @@
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2"  }
+    "typescript": "^5.7.2"
+  }
 }
