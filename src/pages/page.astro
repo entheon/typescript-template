@@ -1,0 +1,71 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Page - TypeScript Template">
+  <main class="max-w-4xl w-full">
+    <div class="bg-white rounded-2xl shadow-2xl p-8 sm:p-12 lg:p-16">
+      <!-- Content -->
+      <div class="space-y-8">
+        <!-- Header -->
+        <div class="space-y-4">
+          <h1 class="font-bold text-4xl sm:text-5xl text-slate-900">Example Page</h1>
+          <p class="text-xl text-slate-600">A generic second page template</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="prose prose-slate max-w-none">
+          <p class="text-lg leading-relaxed text-slate-700">
+            This is a simple, generic page you can customize for any purpose. Use it as a template
+            for:
+          </p>
+
+          <ul class="space-y-2 text-slate-600">
+            <li>About pages</li>
+            <li>Blog posts</li>
+            <li>Documentation</li>
+            <li>Contact forms</li>
+            <li>Project showcases</li>
+            <li>Anything else you need</li>
+          </ul>
+        </div>
+
+        <!-- Example Content Sections -->
+        <div class="grid gap-6 mt-8">
+          <div class="p-6 bg-slate-50 rounded-lg">
+            <h3 class="font-semibold text-lg text-slate-900 mb-2">Section One</h3>
+            <p class="text-slate-600">
+              Add your content here. This section can contain anything you want - text, images,
+              components, or whatever else your page needs.
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-50 rounded-lg">
+            <h3 class="font-semibold text-lg text-slate-900 mb-2">Section Two</h3>
+            <p class="text-slate-600">
+              Another section for additional content. Keep adding sections as needed to structure
+              your page.
+            </p>
+          </div>
+        </div>
+
+        <!-- Back Link -->
+        <div class="pt-4 border-t border-slate-200">
+          <a
+            href="/"
+            class="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 17l-5-5m0 0l5-5m-5 5h12"></path>
+            </svg>
+            <span>Back to home</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

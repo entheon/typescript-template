@@ -1,0 +1,83 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="TypeScript Template">
+  <main class="max-w-4xl w-full">
+    <div class="bg-white rounded-2xl shadow-2xl p-8 sm:p-12 lg:p-16">
+      <!-- Content -->
+      <div class="space-y-8">
+        <!-- Hero Section -->
+        <div class="space-y-4">
+          <h1 class="font-bold text-4xl sm:text-5xl lg:text-6xl text-slate-900">
+            TypeScript Template
+          </h1>
+          <p class="text-xl sm:text-2xl text-slate-600">A modern web development starter</p>
+        </div>
+
+        <!-- Description -->
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Built with <strong>Astro</strong>, <strong>React</strong>, <strong>TypeScript</strong>,
+          and <strong>Tailwind CSS</strong>. Configured with ESLint, Prettier, and Husky for the
+          best developer experience.
+        </p>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="text-center p-4 bg-slate-50 rounded-lg">
+            <div class="text-3xl mb-2">⚡️</div>
+            <div class="text-sm font-medium text-slate-700">Fast</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-lg">
+            <div class="text-3xl mb-2">🎨</div>
+            <div class="text-sm font-medium text-slate-700">Styled</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-lg">
+            <div class="text-3xl mb-2">🔒</div>
+            <div class="text-sm font-medium text-slate-700">Type-safe</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-lg">
+            <div class="text-3xl mb-2">🛠️</div>
+            <div class="text-sm font-medium text-slate-700">Ready</div>
+          </div>
+        </div>
+
+        <!-- Commands -->
+        <div class="space-y-3">
+          <h2 class="font-semibold text-xl text-slate-900">Quick Start</h2>
+          <div class="space-y-2 text-sm sm:text-base">
+            <div class="flex items-center gap-3">
+              <code class="flex-1 px-4 py-2 bg-slate-100 rounded-lg font-mono text-slate-800"
+                >npm run dev</code
+              >
+              <span class="text-slate-500">→ Start dev server</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <code class="flex-1 px-4 py-2 bg-slate-100 rounded-lg font-mono text-slate-800"
+                >npm run build</code
+              >
+              <span class="text-slate-500">→ Build production</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Link to second page -->
+        <div class="pt-4 border-t border-slate-200">
+          <a
+            href="/page"
+            class="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors"
+          >
+            <span>View example page</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

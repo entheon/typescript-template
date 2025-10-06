@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+import "../styles/base.css";
+
+const { title, description = "A modern TypeScript template with Astro, React, and Tailwind CSS" } =
+  Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="min-h-screen flex items-center justify-center bg-linear-to-br from-slate-50 to-slate-100 text-slate-700 p-4"
+  >
+    <slot />
+  </body>
+</html>
