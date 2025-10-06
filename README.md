@@ -55,13 +55,14 @@ Or let the pre-commit hook run them automatically on `git commit`. If any check 
 │   ├── pages/
 │   │   ├── index.astro
 │   │   └── page.astro
+│   ├── styles/
+│   │   └── base.css          # Tailwind v4 config
 │   └── env.d.ts
 ├── public/
 │   └── favicon.svg
 ├── .husky/
 │   └── pre-commit
 ├── astro.config.mjs
-├── tailwind.config.js
 ├── tsconfig.json
 ├── eslint.config.js
 ├── package.json
@@ -73,7 +74,7 @@ Or let the pre-commit hook run them automatically on `git commit`. If any check 
 > This template is configured with Strict TypeScript, and includes all `.ts, .tsx, .astro` files found under `/src`
 
 > [!WARNING]
-> This project is built with TailwindCSS v4+, which now uses CSS configuration. Please install the correct interpreter for TailwindCSS, more information [here](https://tailwindcss.com/docs/editor-setup)
+> This project uses **Tailwind CSS v4** which has a CSS-first configuration approach (no `tailwind.config.js`). For proper editor setup and syntax highlighting, see the [Tailwind CSS editor setup guide](https://tailwindcss.com/docs/editor-setup).
 
 ### Template Pages
 

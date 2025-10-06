@@ -72,14 +72,7 @@ const astroConfig = {
 
 export default [
   {
-    ignores: [
-      "dist/**",
-      "node_modules/**",
-      ".astro/**",
-      "tailwind.config.mjs",
-      "astro.config.mjs",
-      "src/env.d.ts",
-    ],
+    ignores: ["dist/**", "node_modules/**", ".astro/**", "astro.config.mjs", "src/env.d.ts"],
   },
   js.configs.recommended,
   {
@@ -105,15 +98,4 @@ export default [
     },
   },
   astroConfig,
-  {
-    files: ["**/tailwind.config.mjs"],
-    ...commonConfig,
-    languageOptions: {
-      ecmaVersion: 2021,
-      sourceType: "module",
-      globals: {
-        require: "readonly",
-      },
-    },
-  },
 ];
