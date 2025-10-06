@@ -7,13 +7,13 @@ A minimal modern TypeScript template for React-Astro projects with comprehensive
 1. Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 2. Set up pre-commit hooks:
 
 ```bash
-npm run prepare
+pnpm prepare
 ```
 
 ### Code Quality Tools
@@ -30,13 +30,13 @@ You can run these manually:
 
 ```bash
 # Lint
-npm run lint
+pnpm lint
 
 # Lint with auto-fix
-npm run lint:fix
+pnpm lint:fix
 
 # Format code
-npm run format
+pnpm format
 ```
 
 Or let the pre-commit hook run them automatically on `git commit`. If any check fails:
@@ -85,45 +85,24 @@ The template includes two starter pages:
 
 Both pages use a centered card layout with a gradient background for a modern, professional look.
 
-### Code Quality Enforcement
-
-The template includes automatic code quality checks:
-
-1. **Pre-commit Hook**: Runs on `git commit`
-   - Lints staged files with ESLint
-   - Formats code with Prettier
-
-2. **Manual Commands**:
-
-```bash
-# Run ESLint
-npm run lint
-
-# Fix ESLint issues
-npm run lint:fix
-
-# Format code with Prettier
-npm run format
-```
-
 ### Development Workflow
 
 1. Start the development server:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 2. Build for production:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 3. Preview production build:
 
 ```bash
-npm run preview
+pnpm preview
 ```
 
 All commits will automatically trigger the pre-commit hook, ensuring code quality standards are maintained.
